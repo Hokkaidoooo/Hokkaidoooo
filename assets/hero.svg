@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Hokkaido</title>
+  <desc id="desc">计算机系统、数据与风险、可复现工程</desc>
+  <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern></defs>
+  <rect width="1200" height="300" rx="18" fill="#101b20"/>
+  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+  <path d="M54 56h40" stroke="#c1ee88" stroke-width="4"/>
+  <text x="54" y="135" fill="#f2f2e9" font-family="Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">Hokkaido</text>
+  <text x="57" y="183" fill="#b1c3c9" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21">计算机系统 · 数据与风险 · 可复现工程</text>
+  <text x="58" y="250" fill="#c1ee88" font-family="Consolas,monospace" font-size="13" letter-spacing="3">BUILD  /  TEST  /  EXPLAIN</text>
+  <g fill="none" stroke="#7b989f" stroke-width="1.5"><path d="M865 108h105v83H865zM970 149h102M910 191v39h160"/><path d="M807 76h58v73h-58zM1072 114v69" stroke-dasharray="5 7"/></g>
+  <g fill="#c1ee88"><circle cx="865" cy="108" r="7"/><circle cx="970" cy="149" r="7"/><circle cx="1072" cy="230" r="7"/></g>
+  <g fill="#79cbd0"><circle cx="807" cy="76" r="5"/><circle cx="865" cy="191" r="5"/><circle cx="1072" cy="114" r="5"/></g>
+</svg>
