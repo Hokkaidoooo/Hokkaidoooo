@@ -9,30 +9,30 @@
 <td width="50%" valign="top">
 <a href="https://github.com/Hokkaidoooo/cs-systems-lab"><img src="https://raw.githubusercontent.com/Hokkaidoooo/cs-systems-lab/main/assets/cover.svg" alt="系统原理实验室：Cache、分页与 TCP Reno" width="100%"></a>
 <h3>系统原理实验室</h3>
-<p>在浏览器里观察 Cache 命中与替换、x86-64 页表寻址、TCP Reno 窗口变化。可以切换参数、回放轨迹，并用手算例子核对结果。</p>
+<p>在浏览器里观察 Cache、页表和 TCP Reno。支持 LRU/FIFO 同步回放和完整实验链接，结果用手算例、固定种子性质测试与真实浏览器操作核对。</p>
 <p><code>JavaScript</code> <code>Cache</code> <code>虚拟内存</code> <code>TCP</code></p>
 <p><a href="https://hokkaidoooo.github.io/cs-systems-lab/">在线体验</a> · <a href="https://github.com/Hokkaidoooo/cs-systems-lab#第一次体验">操作示例与预期结果</a></p>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/Hokkaidoooo/supply-chain-risk-core"><img src="https://raw.githubusercontent.com/Hokkaidoooo/supply-chain-risk-core/main/assets/cover.svg" alt="产业链风险核心：路径传播、财务口径与数据契约" width="100%"></a>
-<h3>产业链风险核心</h3>
-<p>从工行杯参赛工程整理出的独立模块：沿有向图计算路径暴露，校验财务口径与版本化数据契约。附合成示例、预期数值和边界测试。</p>
+<h3>产业链风险分析与授信研究</h3>
+<p>从工行杯参赛工程整理出的 Python 包，串联工商财务特征、评分授信、产业链传导与报告复现。附可运行的合成案例和本人编制的决赛分析成品。</p>
 <p><code>Python</code> <code>NetworkX</code> <code>图算法</code> <code>数据校验</code></p>
-<p><a href="https://github.com/Hokkaidoooo/supply-chain-risk-core#快速运行">运行示例</a> · <a href="https://github.com/Hokkaidoooo/supply-chain-risk-core#模块阅读顺序">模块与接口</a></p>
+<p><a href="https://github.com/Hokkaidoooo/supply-chain-risk-core#运行完整案例">运行示例</a> · <a href="https://github.com/Hokkaidoooo/supply-chain-risk-core#已收录的能力">模块与接口</a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Hokkaidoooo/cpp-http-server"><img src="https://raw.githubusercontent.com/Hokkaidoooo/cpp-http-server/main/assets/cover.svg" alt="C++ HTTP 服务器：epoll、线程池与路由" width="100%"></a>
 <h3>C++ HTTP 服务器</h3>
-<p>Linux 下的 HTTP 服务原型，用 epoll 和线程池处理连接，按路由完成注册、登录校验与图片上传。代码包含请求解析、响应构造和 MongoDB 存取。</p>
+<p>实现分段 HTTP 请求解析、Argon2id 登录会话和 PNG 上传，连接由 epoll 线程统一管理。真实 MongoDB 集成测试覆盖并发回收，并通过 ASan/UBSan 与 TSan 检查。</p>
 <p><code>C++17</code> <code>epoll</code> <code>线程池</code> <code>MongoDB</code></p>
-<p><a href="https://github.com/Hokkaidoooo/cpp-http-server#请求如何经过系统">请求处理流程</a> · <a href="https://github.com/Hokkaidoooo/cpp-http-server#运行">运行前提</a></p>
+<p><a href="https://github.com/Hokkaidoooo/cpp-http-server#结构">请求处理流程</a> · <a href="https://github.com/Hokkaidoooo/cpp-http-server#linux-构建与验证入口">构建与验证</a></p>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/Hokkaidoooo/mrp-system"><img src="https://raw.githubusercontent.com/Hokkaidoooo/mrp-system/main/assets/cover.svg" alt="MRP 物料需求计划系统：BOM 展开与逐层计算" width="100%"></a>
 <h3>MRP 物料需求计划系统</h3>
-<p>维护物料、BOM 与库存，输入顶层物料的分期计划下达量，沿 BOM 展开需求，按库存、提前期和批量规则生成计划订单。计算服务独立于页面和数据库访问。</p>
+<p>按 BOM 拓扑展开需求，FOQ 按整批补足，并保留期外下达量。重算在一个事务中替换整批结果，包含真实数据库失败回滚、并发重算和 Tomcat 部署验证。</p>
 <p><code>Java</code> <code>Struts2</code> <code>Hibernate</code> <code>MySQL</code></p>
 <p><a href="https://github.com/Hokkaidoooo/mrp-system">源码与模块说明</a> · <a href="https://github.com/Hokkaidoooo/mrp-system#构建与验证">构建与验证</a></p>
 </td>
@@ -41,9 +41,9 @@
 
 ## 其他项目
 
-- [2023 数学建模国赛 B 题](https://github.com/Hokkaidoooo/cumcm-2023-multibeam)：多波束测线问题的团队参赛作品，包含[论文](https://github.com/Hokkaidoooo/cumcm-2023-multibeam/blob/main/paper/cumcm2023-b-paper.pdf)、四问代码与历史结果。
-- [校园新闻门户](https://github.com/Hokkaidoooo/campus-news-portal)：Vue 2 门户页面与 Servlet/JSP 管理后台，展示新闻、通知和导航，使用 MySQL 存储。
-- [南京气象可视化](https://github.com/Hokkaidoooo/nanjing-weather-visualization)：2023 年南京 365 天数据、5 类逐月图表和天气词云，可直接浏览 Notebook 与结果图。
+- [2023 数学建模国赛 B 题](https://github.com/Hokkaidoooo/cumcm-2023-multibeam)：保留团队参赛[论文](https://github.com/Hokkaidoooo/cumcm-2023-multibeam/blob/main/paper/cumcm2023-b-paper.pdf)与历史结果，新增共享几何推导、逐格差异和覆盖约束验算。
+- [校园新闻门户](https://github.com/Hokkaidoooo/campus-news-portal)：Vue 2 门户与 Servlet/JSP 后台，统一连接池、登录控制和 PNG 存储，支持不同部署上下文和端口。
+- [南京气象可视化](https://github.com/Hokkaidoooo/nanjing-weather-visualization)：离线校验 2023 年 365 天数据，脚本与 Notebook 共用流程生成 61 张图，保留原始数据与历史图片。
 
 ## 开源参与
 
