@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="title desc">
+  <title id="title">系统原理实验室 · Systems Lab</title>
+  <desc id="desc">Cache 替换、x86-64 四级页表与 TCP Reno 交互模拟器</desc>
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="798" height="218" rx="10" fill="#0b1317" stroke="#1b2c34" stroke-width="1"/>
+
+  <!-- Left: Identity -->
+  <g transform="translate(32, 28)">
+    <g class="mono" font-size="10" letter-spacing="1.2">
+      <rect x="0" y="0" width="148" height="20" rx="3" fill="#12252e" stroke="#1d4352"/>
+      <text x="74" y="14" text-anchor="middle" fill="#06b6d4" font-weight="600">ARCHITECTURE // WEB</text>
+    </g>
+
+    <text x="0" y="62" class="sans" fill="#ecfeff" font-size="30" font-weight="700" letter-spacing="-0.5">Systems Lab</text>
+    <text x="0" y="88" class="sans" fill="#94a3b8" font-size="13.5">让体系结构原理在参数与逐步轨迹中变得可见</text>
+
+    <g transform="translate(0, 116)" class="mono" font-size="10">
+      <rect x="0" y="0" width="84" height="22" rx="4" fill="#132127" stroke="#223a45"/>
+      <text x="42" y="15" text-anchor="middle" fill="#cffafe">JavaScript</text>
+
+      <rect x="92" y="0" width="56" height="22" rx="4" fill="#132127" stroke="#223a45"/>
+      <text x="28" y="15" text-anchor="middle" fill="#cffafe">Cache</text>
+
+      <rect x="156" y="0" width="80" height="22" rx="4" fill="#132127" stroke="#223a45"/>
+      <text x="196" y="15" text-anchor="middle" fill="#cffafe">PageTable</text>
+
+      <rect x="244" y="0" width="76" height="22" rx="4" fill="#132127" stroke="#223a45"/>
+      <text x="282" y="15" text-anchor="middle" fill="#cffafe">TCP Reno</text>
+    </g>
+  </g>
+
+  <!-- Right: Real Technical Architecture & Benchmark -->
+  <g transform="translate(430, 32)">
+    <rect x="0" y="0" width="338" height="156" rx="8" fill="#0f1a20" stroke="#1d3440"/>
+    <text x="14" y="22" class="mono" fill="#64748b" font-size="10" letter-spacing="1">INTERACTIVE SIMULATION ENGINES</text>
+    <circle cx="320" cy="18" r="3" fill="#06b6d4"/>
+
+    <!-- Address split diagram -->
+    <g transform="translate(14, 38)" class="mono" font-size="10">
+      <rect x="0" y="0" width="130" height="42" rx="4" fill="#162730" stroke="#234252"/>
+      <text x="65" y="18" text-anchor="middle" fill="#67e8f9">TAG [19:6]</text>
+      <text x="65" y="32" text-anchor="middle" class="sans" fill="#94a3b8" font-size="9.5">主存标志匹配</text>
+
+      <rect x="136" y="0" width="94" height="42" rx="4" fill="#162730" stroke="#234252"/>
+      <text x="183" y="18" text-anchor="middle" fill="#67e8f9">SET [5:2]</text>
+      <text x="183" y="32" text-anchor="middle" class="sans" fill="#94a3b8" font-size="9.5">组相联定位</text>
+
+      <rect x="236" y="0" width="74" height="42" rx="4" fill="#12343b" stroke="#1c5561"/>
+      <text x="273" y="18" text-anchor="middle" fill="#a5f3fc">OFFSET</text>
+      <text x="273" y="32" text-anchor="middle" class="sans" fill="#cffafe" font-size="9.5">块内偏移</text>
+    </g>
+
+    <!-- Bottom Specs -->
+    <line x1="14" y1="94" x2="324" y2="94" stroke="#1d3440"/>
+    <g transform="translate(14, 114)" class="mono" font-size="9.5" fill="#8da0ab">
+      <text x="0" y="0">· Cache 对照：同一访问流实时对比 LRU / FIFO</text>
+      <text x="0" y="18">· 在线入口：hokkaidoooo.github.io/cs-systems-lab/</text>
+    </g>
+  </g>
+</svg>

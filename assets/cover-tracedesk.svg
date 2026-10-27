@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="title desc">
+  <title id="title">TraceDesk · 智能客服 Agent</title>
+  <desc id="desc">版本化资料库、LangGraph 协作核验与受约束售后事务</desc>
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="798" height="218" rx="10" fill="#0c131a" stroke="#1e2c38" stroke-width="1"/>
+
+  <!-- Left: Identity -->
+  <g transform="translate(32, 28)">
+    <g class="mono" font-size="10" letter-spacing="1.2">
+      <rect x="0" y="0" width="136" height="20" rx="3" fill="#13232f" stroke="#1e3a4d"/>
+      <text x="68" y="14" text-anchor="middle" fill="#2dd4bf" font-weight="600">AI AGENT // VERIFIED</text>
+    </g>
+
+    <text x="0" y="62" class="sans" fill="#f0fdf4" font-size="30" font-weight="700" letter-spacing="-0.5">TraceDesk</text>
+    <text x="0" y="88" class="sans" fill="#94a3b8" font-size="13.5">带版本化知识证据与确认事务的智能客服</text>
+
+    <g transform="translate(0, 116)" class="mono" font-size="10">
+      <rect x="0" y="0" width="76" height="22" rx="4" fill="#141f28" stroke="#233543"/>
+      <text x="38" y="15" text-anchor="middle" fill="#cbd5e1">LangGraph</text>
+
+      <rect x="84" y="0" width="76" height="22" rx="4" fill="#141f28" stroke="#233543"/>
+      <text x="122" y="15" text-anchor="middle" fill="#cbd5e1">GraphRAG</text>
+
+      <rect x="168" y="0" width="64" height="22" rx="4" fill="#141f28" stroke="#233543"/>
+      <text x="200" y="15" text-anchor="middle" fill="#cbd5e1">FastAPI</text>
+
+      <rect x="240" y="0" width="60" height="22" rx="4" fill="#141f28" stroke="#233543"/>
+      <text x="270" y="15" text-anchor="middle" fill="#cbd5e1">Neo4j</text>
+    </g>
+  </g>
+
+  <!-- Right: Technical Mechanism Diagram -->
+  <g transform="translate(430, 32)">
+    <rect x="0" y="0" width="338" height="156" rx="8" fill="#111c24" stroke="#1d303e"/>
+    <text x="14" y="22" class="mono" fill="#64748b" font-size="10" letter-spacing="1">DUAL-ROLE EVIDENCE VERIFICATION</text>
+    <circle cx="320" cy="18" r="3" fill="#2dd4bf"/>
+
+    <!-- Step 1: Query & Extraction -->
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="94" height="42" rx="4" fill="#162530" stroke="#243d4f"/>
+      <text x="47" y="18" text-anchor="middle" class="mono" fill="#2dd4bf" font-size="10">RESEARCHER</text>
+      <text x="47" y="32" text-anchor="middle" class="sans" fill="#94a3b8" font-size="9.5">取证与初步规划</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M114 59 h18 m-4 -4 l4 4 -4 4" stroke="#334e63" stroke-width="1.5" fill="none"/>
+
+    <!-- Step 2: Verification -->
+    <g transform="translate(138, 38)">
+      <rect x="0" y="0" width="94" height="42" rx="4" fill="#162530" stroke="#243d4f"/>
+      <text x="47" y="18" text-anchor="middle" class="mono" fill="#38bdf8" font-size="10">VERIFIER</text>
+      <text x="47" y="32" text-anchor="middle" class="sans" fill="#94a3b8" font-size="9.5">证据交叉事实核验</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M238 59 h18 m-4 -4 l4 4 -4 4" stroke="#334e63" stroke-width="1.5" fill="none"/>
+
+    <!-- Step 3: Transaction -->
+    <g transform="translate(262, 38)">
+      <rect x="0" y="0" width="62" height="42" rx="4" fill="#132e27" stroke="#1f5243"/>
+      <text x="31" y="18" text-anchor="middle" class="mono" fill="#4ade80" font-size="10">STATE</text>
+      <text x="31" y="32" text-anchor="middle" class="sans" fill="#86efac" font-size="9.5">确认事务</text>
+    </g>
+
+    <!-- Bottom Specs -->
+    <line x1="14" y1="94" x2="324" y2="94" stroke="#1d303e"/>
+    <g transform="translate(14, 114)" class="mono" font-size="9.5" fill="#8b9cb0">
+      <text x="0" y="0">· 快照发布：原文 SHA-256 绝对绑定</text>
+      <text x="0" y="18">· 边界：退款事务由服务端规则原子执行</text>
+    </g>
+  </g>
+</svg>

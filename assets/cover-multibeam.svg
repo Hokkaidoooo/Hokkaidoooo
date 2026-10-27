@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="title desc">
+  <title id="title">数学建模国赛 B 题 · 多波束测线规划</title>
+  <desc id="desc">2023 数模国赛 B 题团队作品：几何推导、覆盖优化与论文代码</desc>
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="798" height="218" rx="10" fill="#0b1518" stroke="#182c32" stroke-width="1"/>
+
+  <!-- Left: Identity -->
+  <g transform="translate(32, 28)">
+    <g class="mono" font-size="10" letter-spacing="1.2">
+      <rect x="0" y="0" width="168" height="20" rx="3" fill="#132729" stroke="#1f4648"/>
+      <text x="84" y="14" text-anchor="middle" fill="#14b8a6" font-weight="600">CUMCM 2023 // MODELING</text>
+    </g>
+
+    <text x="0" y="62" class="sans" fill="#f0fdfa" font-size="28" font-weight="700" letter-spacing="-0.5">多波束测线优化</text>
+    <text x="0" y="88" class="sans" fill="#94a3b8" font-size="13.5">2023 数模国赛 B 题 · 参赛论文与覆盖约束复核代码</text>
+
+    <g transform="translate(0, 116)" class="mono" font-size="10">
+      <rect x="0" y="0" width="68" height="22" rx="4" fill="#122023" stroke="#213a3e"/>
+      <text x="34" y="15" text-anchor="middle" fill="#ccfbf1">Python</text>
+
+      <rect x="76" y="0" width="70" height="22" rx="4" fill="#122023" stroke="#213a3e"/>
+      <text x="111" y="15" text-anchor="middle" fill="#ccfbf1">MATLAB</text>
+
+      <rect x="154" y="0" width="94" height="22" rx="4" fill="#122023" stroke="#213a3e"/>
+      <text x="201" y="15" text-anchor="middle" fill="#ccfbf1">Geometry</text>
+
+      <rect x="256" y="0" width="76" height="22" rx="4" fill="#122023" stroke="#213a3e"/>
+      <text x="294" y="15" text-anchor="middle" fill="#ccfbf1">Paper PDF</text>
+    </g>
+  </g>
+
+  <!-- Right: Real Technical Architecture & Benchmark -->
+  <g transform="translate(430, 32)">
+    <rect x="0" y="0" width="338" height="156" rx="8" fill="#101d22" stroke="#1d373e"/>
+    <text x="14" y="22" class="mono" fill="#5eead4" font-size="10" letter-spacing="1">GEOMETRIC OPTIMIZATION</text>
+    <circle cx="320" cy="18" r="3" fill="#14b8a6"/>
+
+    <!-- Sonar geometry schematic -->
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="94" height="42" rx="4" fill="#162930" stroke="#254a52"/>
+      <text x="47" y="18" text-anchor="middle" class="sans" fill="#99f6e4" font-size="10">换能器开角</text>
+      <text x="47" y="32" text-anchor="middle" class="mono" fill="#5eead4" font-size="9.5">2θ = 120°</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M114 59 h18 m-4 -4 l4 4 -4 4" stroke="#2a5861" stroke-width="1.5" fill="none"/>
+
+    <!-- Slope Correction -->
+    <g transform="translate(138, 38)">
+      <rect x="0" y="0" width="94" height="42" rx="4" fill="#162930" stroke="#254a52"/>
+      <text x="47" y="18" text-anchor="middle" class="sans" fill="#99f6e4" font-size="10">坡度修正模型</text>
+      <text x="47" y="32" text-anchor="middle" class="mono" fill="#5eead4" font-size="9.5">海底坡度 α</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M238 59 h18 m-4 -4 l4 4 -4 4" stroke="#2a5861" stroke-width="1.5" fill="none"/>
+
+    <!-- Coverage result -->
+    <g transform="translate(262, 38)">
+      <rect x="0" y="0" width="62" height="42" rx="4" fill="#133535" stroke="#1d5c58"/>
+      <text x="31" y="18" text-anchor="middle" class="mono" fill="#2dd4bf" font-size="10">OVERLAP</text>
+      <text x="31" y="32" text-anchor="middle" class="mono" fill="#a7f3d0" font-size="9.5">η ≥ 10%</text>
+    </g>
+
+    <!-- Bottom Specs -->
+    <line x1="14" y1="94" x2="324" y2="94" stroke="#1d373e"/>
+    <g transform="translate(14, 114)" class="mono" font-size="9.5" fill="#88b5b4">
+      <text x="0" y="0">· 保留团队参赛完整论文（PDF）与原始建模代码</text>
+      <text x="0" y="18">· 包含共享几何推导验证与测线逐格覆盖验算</text>
+    </g>
+  </g>
+</svg>

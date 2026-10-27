@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="title desc">
+  <title id="title">C++ HTTP 服务器 · Linux C++17</title>
+  <desc id="desc">非阻塞 epoll 状态机、有界线程池与真实压测分析</desc>
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="798" height="218" rx="10" fill="#111215" stroke="#2a2b30" stroke-width="1"/>
+
+  <!-- Left: Identity -->
+  <g transform="translate(32, 28)">
+    <g class="mono" font-size="10" letter-spacing="1.2">
+      <rect x="0" y="0" width="138" height="20" rx="3" fill="#241d13" stroke="#483820"/>
+      <text x="69" y="14" text-anchor="middle" fill="#f59e0b" font-weight="600">SYSTEMS // C++17</text>
+    </g>
+
+    <text x="0" y="62" class="sans" fill="#fafaf9" font-size="30" font-weight="700" letter-spacing="-0.5">cpp-http-server</text>
+    <text x="0" y="88" class="sans" fill="#a1a1aa" font-size="13.5">epoll 事件循环 · 增量解析状态机 · MongoDB 池</text>
+
+    <g transform="translate(0, 116)" class="mono" font-size="10">
+      <rect x="0" y="0" width="60" height="22" rx="4" fill="#1c1d22" stroke="#32333b"/>
+      <text x="30" y="15" text-anchor="middle" fill="#d4d4d8">Linux</text>
+
+      <rect x="68" y="0" width="56" height="22" rx="4" fill="#1c1d22" stroke="#32333b"/>
+      <text x="28" y="15" text-anchor="middle" fill="#d4d4d8">epoll</text>
+
+      <rect x="132" y="0" width="80" height="22" rx="4" fill="#1c1d22" stroke="#32333b"/>
+      <text x="172" y="15" text-anchor="middle" fill="#d4d4d8">ThreadPool</text>
+
+      <rect x="220" y="0" width="76" height="22" rx="4" fill="#1c1d22" stroke="#32333b"/>
+      <text x="258" y="15" text-anchor="middle" fill="#d4d4d8">Argon2id</text>
+    </g>
+  </g>
+
+  <!-- Right: Real Technical Architecture & Benchmark -->
+  <g transform="translate(430, 32)">
+    <rect x="0" y="0" width="338" height="156" rx="8" fill="#17181c" stroke="#2d2e35"/>
+    <text x="14" y="22" class="mono" fill="#71717a" font-size="10" letter-spacing="1">PIPELINE &amp; BENCHMARK</text>
+    <circle cx="320" cy="18" r="3" fill="#f59e0b"/>
+
+    <!-- Concurrency Pipeline Flow -->
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="84" height="42" rx="4" fill="#1f2026" stroke="#373842"/>
+      <text x="42" y="18" text-anchor="middle" class="mono" fill="#f59e0b" font-size="9.5">EPOLL THREAD</text>
+      <text x="42" y="32" text-anchor="middle" class="sans" fill="#a1a1aa" font-size="9.5">非阻塞增量解析</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M104 59 h18 m-4 -4 l4 4 -4 4" stroke="#444652" stroke-width="1.5" fill="none"/>
+
+    <!-- Queue & Workers -->
+    <g transform="translate(128, 38)">
+      <rect x="0" y="0" width="94" height="42" rx="4" fill="#1f2026" stroke="#373842"/>
+      <text x="47" y="18" text-anchor="middle" class="mono" fill="#fbbf24" font-size="9.5">QUEUE (cap 64)</text>
+      <text x="47" y="32" text-anchor="middle" class="sans" fill="#a1a1aa" font-size="9.5">满队列 503 快速失败</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M228 59 h18 m-4 -4 l4 4 -4 4" stroke="#444652" stroke-width="1.5" fill="none"/>
+
+    <!-- Return eventfd -->
+    <g transform="translate(252, 38)">
+      <rect x="0" y="0" width="72" height="42" rx="4" fill="#241d13" stroke="#523e19"/>
+      <text x="36" y="18" text-anchor="middle" class="mono" fill="#f59e0b" font-size="9.5">EVENTFD</text>
+      <text x="36" y="32" text-anchor="middle" class="sans" fill="#fde68a" font-size="9.5">代号安全回发</text>
+    </g>
+
+    <!-- Bottom Specs -->
+    <line x1="14" y1="94" x2="324" y2="94" stroke="#2d2e35"/>
+    <g transform="translate(14, 114)" class="mono" font-size="9.5" fill="#a1a1aa">
+      <text x="0" y="0">· CI 压测：12,409 req/s @ P50 4.9ms (并发 64)</text>
+      <text x="0" y="18">· 质检：通过 ASan / UBSan / TSan 全项检查</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="title desc">
+  <title id="title">产业链风险分析与授信研究 · 工行杯参赛项目</title>
+  <desc id="desc">工商财务特征、NetworkX 图传导算法与报告复现引擎</desc>
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="798" height="218" rx="10" fill="#141115" stroke="#2c212a" stroke-width="1"/>
+
+  <!-- Left: Identity -->
+  <g transform="translate(32, 28)">
+    <g class="mono" font-size="10" letter-spacing="1.2">
+      <rect x="0" y="0" width="168" height="20" rx="3" fill="#291823" stroke="#522b44"/>
+      <text x="84" y="14" text-anchor="middle" fill="#f43f5e" font-weight="600">FINANCIAL GRAPH // RISK</text>
+    </g>
+
+    <text x="0" y="62" class="sans" fill="#fff1f2" font-size="28" font-weight="700" letter-spacing="-0.5">supply-chain-risk-core</text>
+    <text x="0" y="88" class="sans" fill="#94a3b8" font-size="13.5">产业链传导情景分析 · 授信评分规则与报告生成</text>
+
+    <g transform="translate(0, 116)" class="mono" font-size="10">
+      <rect x="0" y="0" width="68" height="22" rx="4" fill="#1c161f" stroke="#332432"/>
+      <text x="34" y="15" text-anchor="middle" fill="#fecdd3">Python</text>
+
+      <rect x="76" y="0" width="82" height="22" rx="4" fill="#1c161f" stroke="#332432"/>
+      <text x="117" y="15" text-anchor="middle" fill="#fecdd3">NetworkX</text>
+
+      <rect x="166" y="0" width="60" height="22" rx="4" fill="#1c161f" stroke="#332432"/>
+      <text x="196" y="15" text-anchor="middle" fill="#fecdd3">NumPy</text>
+
+      <rect x="234" y="0" width="76" height="22" rx="4" fill="#1c161f" stroke="#332432"/>
+      <text x="272" y="15" text-anchor="middle" fill="#fecdd3">ICBC Cup</text>
+    </g>
+  </g>
+
+  <!-- Right: Real Technical Architecture & Benchmark -->
+  <g transform="translate(430, 32)">
+    <rect x="0" y="0" width="338" height="156" rx="8" fill="#1c141c" stroke="#362235"/>
+    <text x="14" y="22" class="mono" fill="#886884" font-size="10" letter-spacing="1">GRAPH PROPAGATION &amp; AUDIT</text>
+    <circle cx="320" cy="18" r="3" fill="#f43f5e"/>
+
+    <!-- Graph path diagram -->
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="80" height="42" rx="4" fill="#241624" stroke="#482747"/>
+      <text x="40" y="18" text-anchor="middle" class="sans" fill="#fda4af" font-size="10">原料供应</text>
+      <text x="40" y="32" text-anchor="middle" class="mono" fill="#886884" font-size="9.5">权重 0.5</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M90 59 h18 m-4 -4 l4 4 -4 4" stroke="#5a3158" stroke-width="1.5" fill="none"/>
+
+    <!-- Mid Node -->
+    <g transform="translate(118, 38)">
+      <rect x="0" y="0" width="80" height="42" rx="4" fill="#241624" stroke="#482747"/>
+      <text x="40" y="18" text-anchor="middle" class="sans" fill="#fda4af" font-size="10">核心加工</text>
+      <text x="40" y="32" text-anchor="middle" class="mono" fill="#886884" font-size="9.5">权重 0.4</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M208 59 h18 m-4 -4 l4 4 -4 4" stroke="#5a3158" stroke-width="1.5" fill="none"/>
+
+    <!-- Terminal -->
+    <g transform="translate(236, 38)">
+      <rect x="0" y="0" width="88" height="42" rx="4" fill="#361726" stroke="#6b2746"/>
+      <text x="44" y="18" text-anchor="middle" class="sans" fill="#f43f5e" font-size="10" font-weight="600">终端风险</text>
+      <text x="44" y="32" text-anchor="middle" class="mono" fill="#fecdd3" font-size="9.5">系数 0.24</text>
+    </g>
+
+    <!-- Bottom Specs -->
+    <line x1="14" y1="94" x2="324" y2="94" stroke="#362235"/>
+    <g transform="translate(14, 114)" class="mono" font-size="9.5" fill="#a88aa5">
+      <text x="0" y="0">· 工行杯参赛工程整理，附决赛分析完整成品</text>
+      <text x="0" y="18">· 最强路径连乘情景模拟，具备完整可运行合成案例</text>
+    </g>
+  </g>
+</svg>

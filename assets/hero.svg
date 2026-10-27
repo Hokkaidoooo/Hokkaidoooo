@@ -1,15 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-  <title id="title">Hokkaido</title>
-  <desc id="desc">后端开发、系统底层与数据</desc>
-  <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".055"/></pattern><radialGradient id="glow" cx="170" cy="60" r="620" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c1ee88" stop-opacity=".12"/><stop offset="1" stop-color="#c1ee88" stop-opacity="0"/></radialGradient></defs>
-  <rect width="1200" height="300" rx="18" fill="#101b20"/>
-  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
-  <rect width="1200" height="300" rx="18" fill="url(#glow)"/>
-  <path d="M54 56h40" stroke="#c1ee88" stroke-width="4"/>
-  <text x="54" y="135" fill="#f2f2e9" font-family="Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">Hokkaido</text>
-  <text x="57" y="183" fill="#b1c3c9" font-family="Microsoft YaHei,Arial,sans-serif" font-size="21">后端开发 / 系统底层 / AI Agent / 数据建模</text>
-  <text x="58" y="250" fill="#c1ee88" font-family="Consolas,monospace" font-size="13" letter-spacing="3">C++17 / PYTHON / LINUX / GRAPH &amp; RAG</text>
-  <g fill="none" stroke="#7b989f" stroke-width="1.5"><path d="M865 108h105v83H865zM970 149h102M910 191v39h160"/><path d="M807 76h58v73h-58zM1072 114v69" stroke-dasharray="5 7"/></g>
-  <g fill="#c1ee88"><circle cx="865" cy="108" r="7"/><circle cx="970" cy="149" r="7"/><circle cx="1072" cy="230" r="7"/></g>
-  <g fill="#79cbd0"><circle cx="807" cy="76" r="5"/><circle cx="865" cy="191" r="5"/><circle cx="1072" cy="114" r="5"/></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Hokkaido · Systems &amp; Verifiable Agents</title>
+  <desc id="desc">后端架构、系统底层、可验证 AI Agent 与数据建模</desc>
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Menlo, Consolas, monospace; }
+    </style>
+    <linearGradient id="panel-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Container: Seamless with GitHub Dark Mode -->
+  <rect x="1" y="1" width="1198" height="278" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Top Metadata Header Strip -->
+  <g class="mono" font-size="11" letter-spacing="1">
+    <rect x="44" y="24" width="76" height="20" rx="4" fill="#1f242c" stroke="#30363d" stroke-width="1"/>
+    <text x="82" y="38" text-anchor="middle" fill="#58a6ff" font-weight="600">PROFILE</text>
+    <text x="134" y="38" fill="#8b949e">HOKKAIDO // SYSTEMS &amp; VERIFIABLE AGENTS</text>
+    <text x="1156" y="38" text-anchor="end" fill="#6e7681">NANJING, CN · 2026</text>
+  </g>
+  <line x1="44" y1="56" x2="1156" y2="56" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Left Column: Identity & Engineering Philosophy -->
+  <g transform="translate(44, 76)">
+    <!-- Main Name -->
+    <text x="0" y="44" class="sans" fill="#f0f6fc" font-size="44" font-weight="700" letter-spacing="-1.2">Hokkaido</text>
+    
+    <!-- Role Statement -->
+    <text x="0" y="78" class="sans" fill="#c9d1d9" font-size="16" font-weight="500">
+      系统底层与服务端工程 <tspan fill="#484f58">|</tspan> 可信 AI 智能体 <tspan fill="#484f58">|</tspan> 数据建模与图算法
+    </text>
+
+    <!-- Engineering Principles Quote -->
+    <g transform="translate(0, 98)">
+      <line x1="0" y1="4" x2="0" y2="24" stroke="#388bfd" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="12" y="18" class="mono" fill="#8b949e" font-size="12">
+        "Explicit state transitions over implicit assumptions. Verified evidence over conjecture."
+      </text>
+    </g>
+
+    <!-- Tech Stack Pill Group -->
+    <g transform="translate(0, 142)" class="mono" font-size="11">
+      <rect x="0" y="0" width="86" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="43" y="16" text-anchor="middle" fill="#e6edf3">C++17</text>
+
+      <rect x="94" y="0" width="112" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="150" y="16" text-anchor="middle" fill="#e6edf3">Linux / epoll</text>
+
+      <rect x="214" y="0" width="82" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="255" y="16" text-anchor="middle" fill="#e6edf3">Python</text>
+
+      <rect x="304" y="0" width="102" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="355" y="16" text-anchor="middle" fill="#e6edf3">LangGraph</text>
+
+      <rect x="414" y="0" width="94" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="461" y="16" text-anchor="middle" fill="#e6edf3">GraphRAG</text>
+
+      <rect x="516" y="0" width="90" height="24" rx="12" fill="#161b22" stroke="#30363d"/>
+      <text x="561" y="16" text-anchor="middle" fill="#e6edf3">NetworkX</text>
+    </g>
+  </g>
+
+  <!-- Right Column: Substantive Architectural Invariants Card -->
+  <g transform="translate(686, 76)">
+    <!-- Container Card -->
+    <rect x="0" y="0" width="470" height="172" rx="8" fill="url(#panel-grad)" stroke="#30363d" stroke-width="1"/>
+    
+    <!-- Card Header -->
+    <path d="M0,8 a8,8 0 0,1 8,-8 h454 a8,8 0 0,1 8,8 v24 h-470 z" fill="#1c2128"/>
+    <line x1="0" y1="32" x2="470" y2="32" stroke="#30363d" stroke-width="1"/>
+    <text x="16" y="21" class="mono" fill="#8b949e" font-size="10.5" font-weight="600" letter-spacing="1.5">SYSTEM CONTRACTS &amp; INVARIANTS</text>
+    <circle cx="450" cy="16" r="3.5" fill="#3fb950"/>
+
+    <!-- Invariant Items (Substantive, Not Fluff) -->
+    <g transform="translate(16, 42)">
+      <!-- Item 1: Concurrency / Systems -->
+      <g transform="translate(0, 14)">
+        <rect x="0" y="0" width="60" height="18" rx="3" fill="#1f2d3d"/>
+        <text x="30" y="13" text-anchor="middle" class="mono" fill="#58a6ff" font-size="10" font-weight="600">SYS.IO</text>
+        <text x="70" y="13" class="sans" fill="#e6edf3" font-size="12">epoll 统一调度 · 有界工作队列快速失败与回收</text>
+      </g>
+
+      <!-- Item 2: Verifiable Agents -->
+      <g transform="translate(0, 44)">
+        <rect x="0" y="0" width="60" height="18" rx="3" fill="#1c2e26"/>
+        <text x="30" y="13" text-anchor="middle" class="mono" fill="#3fb950" font-size="10" font-weight="600">AGENT</text>
+        <text x="70" y="13" class="sans" fill="#e6edf3" font-size="12">快照证据绑定 SHA-256 · 双角色交叉核验机制</text>
+      </g>
+
+      <!-- Item 3: Transactions & Boundaries -->
+      <g transform="translate(0, 74)">
+        <rect x="0" y="0" width="60" height="18" rx="3" fill="#2d2238"/>
+        <text x="30" y="13" text-anchor="middle" class="mono" fill="#bc8cff" font-size="10" font-weight="600">TRANS</text>
+        <text x="70" y="13" class="sans" fill="#e6edf3" font-size="12">模型仅提炼意图凭证 · 状态修改由服务端确定性执行</text>
+      </g>
+
+      <!-- Item 4: Verification & Quality -->
+      <g transform="translate(0, 104)">
+        <rect x="0" y="0" width="60" height="18" rx="3" fill="#2d261e"/>
+        <text x="30" y="13" text-anchor="middle" class="mono" fill="#d29922" font-size="10" font-weight="600">VERIFY</text>
+        <text x="70" y="13" class="sans" fill="#e6edf3" font-size="12">ASan/TSan 内存安全 · CI 真实服务集成评测</text>
+      </g>
+    </g>
+  </g>
 </svg>

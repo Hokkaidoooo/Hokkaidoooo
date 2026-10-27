@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="title desc">
+  <title id="title">知乎专栏离线导出 · Chrome 扩展</title>
+  <desc id="desc">将专栏保存为 Markdown、离线 HTML 与本地资源包</desc>
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "JetBrains Mono", Menlo, monospace; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="798" height="218" rx="10" fill="#0c121c" stroke="#1d2a3c" stroke-width="1"/>
+
+  <!-- Left: Identity -->
+  <g transform="translate(32, 28)">
+    <g class="mono" font-size="10" letter-spacing="1.2">
+      <rect x="0" y="0" width="144" height="20" rx="3" fill="#142136" stroke="#213a61"/>
+      <text x="72" y="14" text-anchor="middle" fill="#3b82f6" font-weight="600">TOOL // MANIFEST V3</text>
+    </g>
+
+    <text x="0" y="62" class="sans" fill="#eff6ff" font-size="30" font-weight="700" letter-spacing="-0.5">知乎专栏离线导出</text>
+    <text x="0" y="88" class="sans" fill="#94a3b8" font-size="13.5">专栏目录自动分页 · Markdown 与离线 HTML 打包</text>
+
+    <g transform="translate(0, 116)" class="mono" font-size="10">
+      <rect x="0" y="0" width="82" height="22" rx="4" fill="#141c29" stroke="#22334b"/>
+      <text x="41" y="15" text-anchor="middle" fill="#bfdbfe">TypeScript</text>
+
+      <rect x="90" y="0" width="76" height="22" rx="4" fill="#141c29" stroke="#22334b"/>
+      <text x="128" y="15" text-anchor="middle" fill="#bfdbfe">Chrome Ext</text>
+
+      <rect x="174" y="0" width="76" height="22" rx="4" fill="#141c29" stroke="#22334b"/>
+      <text x="212" y="15" text-anchor="middle" fill="#bfdbfe">Markdown</text>
+
+      <rect x="258" y="0" width="60" height="22" rx="4" fill="#141c29" stroke="#22334b"/>
+      <text x="288" y="15" text-anchor="middle" fill="#bfdbfe">Offline</text>
+    </g>
+  </g>
+
+  <!-- Right: Real Technical Architecture & Benchmark -->
+  <g transform="translate(430, 32)">
+    <rect x="0" y="0" width="338" height="156" rx="8" fill="#101826" stroke="#1f314a"/>
+    <text x="14" y="22" class="mono" fill="#64748b" font-size="10" letter-spacing="1">ARCHIVE PIPELINE &amp; SECURITY</text>
+    <circle cx="320" cy="18" r="3" fill="#3b82f6"/>
+
+    <!-- Pipeline representation -->
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="94" height="42" rx="4" fill="#162338" stroke="#263d61"/>
+      <text x="47" y="18" text-anchor="middle" class="mono" fill="#60a5fa" font-size="9.5">PAGE / API</text>
+      <text x="47" y="32" text-anchor="middle" class="sans" fill="#94a3b8" font-size="9.5">双模式自适应抓取</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M114 59 h18 m-4 -4 l4 4 -4 4" stroke="#2e486e" stroke-width="1.5" fill="none"/>
+
+    <!-- Format & Assets -->
+    <g transform="translate(138, 38)">
+      <rect x="0" y="0" width="94" height="42" rx="4" fill="#162338" stroke="#263d61"/>
+      <text x="47" y="18" text-anchor="middle" class="mono" fill="#60a5fa" font-size="9.5">ASSET LOADER</text>
+      <text x="47" y="32" text-anchor="middle" class="sans" fill="#94a3b8" font-size="9.5">图片本地化与防盗链</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M238 59 h18 m-4 -4 l4 4 -4 4" stroke="#2e486e" stroke-width="1.5" fill="none"/>
+
+    <!-- Packaged zip -->
+    <g transform="translate(262, 38)">
+      <rect x="0" y="0" width="62" height="42" rx="4" fill="#152744" stroke="#244882"/>
+      <text x="31" y="18" text-anchor="middle" class="mono" fill="#93c5fd" font-size="9.5">ZIP</text>
+      <text x="31" y="32" text-anchor="middle" class="sans" fill="#bfdbfe" font-size="9.5">断点补读</text>
+    </g>
+
+    <!-- Bottom Specs -->
+    <line x1="14" y1="94" x2="324" y2="94" stroke="#1f314a"/>
+    <g transform="translate(14, 114)" class="mono" font-size="9.5" fill="#889cb8">
+      <text x="0" y="0">· 权限安全：零 Cookie 权限，沿用正常浏览器登录态</text>
+      <text x="0" y="18">· 容错机制：未完成章节单独列表，支持一键补读重试</text>
+    </g>
+  </g>
+</svg>
